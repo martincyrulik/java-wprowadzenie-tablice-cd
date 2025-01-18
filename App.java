@@ -1,6 +1,10 @@
 class App {
 	public static void main(String args[]) {
 		
+		// ------------------------------- ZADANIE 1 -------------------------------
+		
+		System.out.println("--------ZADANIE 1 ---------");
+		System.out.println();
 		char[] name = new char[5];
 		name[0] = 'K';
 		name[1] = 'a';
@@ -42,5 +46,54 @@ class App {
 		
 		
 		System.out.println("--------------------");
+		System.out.println();
+		
+		// ------------------------------- ZADANIE 1 -------------------------------
+		System.out.println("--------ZADANIE 2 ---------");
+		System.out.println();
+		System.out.println("---------");
+		
+		byte[] ks01 = new byte[5];
+		ks01[0] = 7;
+		ks01[1] = 2;
+		ks01[2] = 6;
+		ks01[3] = 0;
+		ks01[4] = 0;
+		
+		System.out.print(ks01[0]);
+		System.out.print(ks01[1]);
+		System.out.print(ks01[2]);
+		System.out.print(ks01[3]);
+		System.out.print(ks01[4]);
+		System.out.println();
+		
+		byte[] ks02 = new byte[5];
+		ks02[0] = 7;
+		ks02[1] = 2;
+		ks02[2] = 6;
+		ks02[3] = 0;
+		ks02[4] = 2;
+		
+		System.out.println(ks02[0]+""+ks02[1]+""+ks02[2]+""+ks02[3]+""+ks02[4]);
+		
+		byte[] ks03 = new byte[5];
+		ks03[0] = 7;
+		ks03[1] = 2;
+		ks03[2] = 6;
+		ks03[3] = 0;
+		ks03[4] = 3;
+		
+		System.out.println(ks03[0]+""+ks03[1]+""+ks03[2]+""+ks03[3]+""+ks03[4]);
+		
+		byte[] ks04 = new byte[5];
+		ks04[0] = 7;
+		ks04[1] = 2;
+		ks04[2] = 6;
+		ks04[3] = 0;
+		ks04[4] = 5;
+		
+		System.out.println(ks04[0]+""+ks04[1]+""+ks04[2]+""+ks04[3]+""+ks04[4]);
+		System.out.println("---------");
+		
 	}
 }
