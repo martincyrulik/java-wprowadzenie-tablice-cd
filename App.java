@@ -48,7 +48,7 @@ class App {
 		System.out.println("--------------------");
 		System.out.println();
 		
-		// ------------------------------- ZADANIE 1 -------------------------------
+		// ------------------------------- ZADANIE 2 -------------------------------
 		System.out.println("--------ZADANIE 2 ---------");
 		System.out.println();
 		System.out.println("---------");
@@ -94,6 +94,44 @@ class App {
 		
 		System.out.println(ks04[0]+""+ks04[1]+""+ks04[2]+""+ks04[3]+""+ks04[4]);
 		System.out.println("---------");
+		System.out.println();
+		
+		// ------------------------------- ZADANIE 3 -------------------------------
+		
+		System.out.println("--------ZADANIE 3 ---------");
+		System.out.println();
+		System.out.println("--------------------------------------");
+		byte index[] = new byte[6]; // deklaracja indeksu studenta jako tablicy
+		index[0] = 2;
+		index[1] = 3;
+		index[2] = 4;
+		index[3] = 1;
+		index[4] = 2;
+		index[5] = 1;
+		
+		//wyświetl nr indexu studenta na ekranie
+		System.out.print("Student: ");
+		System.out.print(index[0]);
+		System.out.print(index[1]);
+		System.out.print(index[2]);
+		System.out.print(index[3]);
+		System.out.print(index[4]);
+		System.out.println(index[5]);
+		
+		//deklaracja i przypisanie ocen studenta do tablicy
+		double grade[] = new double[6];
+		grade[0] = 5;
+		grade[1] = 1;
+		grade[2] = 3.5;
+		grade[3] = 1;
+		grade[4] = 6;
+		grade[5] = 4.5;
+		
+		//wyświetlenie ocen studenta na ekranie
+		System.out.print("Oceny z informatyki: ");
+		System.out.print((int)grade[0]+","+(int)grade[1]+","+grade[2]+",");
+		System.out.println((int)grade[3]+","+(int)grade[4]+","+grade[5]);
+		System.out.println("--------------------------------------");
 		
 	}
 }
