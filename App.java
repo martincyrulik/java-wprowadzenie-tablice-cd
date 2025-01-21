@@ -132,6 +132,76 @@ class App {
 		System.out.print((int)grade[0]+","+(int)grade[1]+","+grade[2]+",");
 		System.out.println((int)grade[3]+","+(int)grade[4]+","+grade[5]);
 		System.out.println("--------------------------------------");
+		System.out.println();
+		
+		// ------------------------------- ZADANIE 4 -------------------------------
+		System.out.println("--------ZADANIE 4 ---------");
+		System.out.println();
+		
+		//stworzenie 5-el. tablicy ocen z matematyki
+		int oceny[] = new int[5];
+		oceny[0] = 5;
+		oceny[1] = 4;
+		oceny[2] = 3;
+		oceny[3] = 2;
+		oceny[4] = 1;
+		System.out.print("Oceny z matematyki: ");
+		System.out.print(oceny[0]+ ",");
+		System.out.print(oceny[1]+ ",");
+		System.out.print(oceny[2]+ ",");
+		System.out.print(oceny[3]+ ",");
+		System.out.println(oceny[4]);
+		
+		
+		//wyświetlenie 3 -ech ostatnich ocen
+		System.out.print("Wyświetlenie 3-ech ostatnich ocen: ");
+		System.out.println(oceny[2] + "," + oceny[3] + "," + oceny[4]);
+		
+		//poprawienie 2-ej oceny na 5
+		oceny[1] = 5;
+		System.out.print("Poprawienie 2-ej oceny na 5: ");
+		System.out.println(oceny[0]+","+oceny[1]+","+oceny[2]+","+oceny[3]+","+oceny[4]);
+		
+		//ustawienie ocen w tablicy od najmniejszej do największej
+		int tmp; //deklaracja tymczasowej zmiennej
+		tmp = oceny[0]; // porównanie oceny[0] z oceny[1]
+		oceny[0] = oceny[0] < oceny[1] ? oceny[0] : oceny[1];
+		oceny[1] = oceny[1] > tmp ? oceny[1] : tmp;
+		tmp = oceny[0]; // porównanie oceny[0] z oceny[2]
+		oceny[0] = oceny[0] < oceny[2] ? oceny[0] : oceny[2];
+		oceny[2] = oceny[2] > tmp ? oceny[2] : tmp;
+		tmp = oceny[0];  // porównanie oceny[0] z oceny[3]
+		oceny[0] = oceny[0] < oceny[3] ? oceny[0] : oceny[3];
+		oceny[3] = oceny[3] > tmp ? oceny[3] : tmp;
+		tmp = oceny[0]; // porównanie oceny[0] z oceny[4]
+		oceny[0] = oceny[0] < oceny[4] ? oceny[0] : oceny[4];
+		oceny[4] = oceny[4] > tmp ? oceny[4] : tmp;
+		
+		tmp = oceny[1]; // porównanie oceny[1] z oceny[2]
+		oceny[1] = oceny[1] < oceny[2] ? oceny[1] : oceny[2];
+		oceny[2] = oceny[2] > tmp ? oceny[2] : tmp;
+		tmp = oceny[1]; // porównanie oceny[1] z oceny[3];
+		oceny[1] = oceny[1] < oceny[3] ? oceny[1] : oceny[3];
+		oceny[3] = oceny[3] > tmp ? oceny[3] : tmp;
+		tmp = oceny[1];  // porównanie oceny[1] z oceny[4]
+		oceny[1] = oceny[1] < oceny[4] ? oceny[1] : oceny[4];
+		oceny[4] = oceny[4] > tmp ? oceny[4] : tmp;
+		
+		tmp = oceny[2]; // porównanie oceny[2] z oceny[3]
+		oceny[2] = oceny[2] < oceny[3] ? oceny[2] : oceny[3];
+		oceny[3] = oceny[3] > tmp ? oceny[3] : tmp;
+		tmp = oceny[2]; // porównanie oceny[2] z oceny[4]
+		oceny[2] = oceny[2] < oceny[4] ? oceny[2] : oceny[4];
+		oceny[4] = oceny[4] > tmp ? oceny[4] : tmp;
+		
+		tmp = oceny[3]; // porównanie oceny[3] z oceny[4]
+		oceny[3] = oceny[3] < oceny[4] ? oceny[3] : oceny[4];
+		oceny[4] = oceny[4] > tmp ? oceny[4] : tmp;
+		
+		// Wyświetlenie uporządkowanej tablicy końcowej
+		System.out.print("Uporządkowana tablica: ");
+		System.out.println(oceny[0]+","+oceny[1]+","+oceny[2]+","+oceny[3]+","+oceny[4]);
+		
 		
 	}
 }
